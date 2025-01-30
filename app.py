@@ -23,7 +23,7 @@ def load_gemini_model():
 
 # set up Groq API key
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-client = Groq()
+client = Groq(api_key = GROQ_API_KEY)
 
 messages = [
         {"role": "system", "content": "You are a helpful assistant"}
